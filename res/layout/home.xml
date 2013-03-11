@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/CJWT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f1"
+            android:onClick="btnonclicks" />
+
+        <ImageButton
+            android:id="@+id/JJZD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/f2"
+            android:onClick="btnonclicks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/smslt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f5"
+            android:onClick="btnonclicks" />
+
+        <ImageButton
+            android:id="@+id/xd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/f4"
+            android:onClick="btnonclicks" />
+
+        <ImageButton
+            android:id="@+id/gsjj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/f3"
+            android:onClick="btnonclicks" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flipper"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/BtnSlide"
+            android:layout_width="20dp"
+            android:layout_height="360dp"
+            android:layout_gravity="right"
+            android:src="@drawable/move_left" />
+
+        <ImageView
+            android:id="@+id/BtnSlide1"
+            android:layout_width="20dp"
+            android:layout_height="360dp"
+            android:src="@drawable/move_left" 
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/menu"
+            layout="@layout/dummy_menu" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xts"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="close"
+            android:src="@drawable/x"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="downPage"
+            android:text="@string/downPage"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:clickable="true"
+            android:onClick="tieshi"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

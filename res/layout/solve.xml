@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/solveImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car" />
+
+    <ImageView
+        android:id="@+id/iView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="125dip"
+        android:layout_y="50dip"
+        android:src="@drawable/light_spot" />
+
+    <TextView
+        android:id="@+id/tView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="125dip"
+        android:layout_y="38dip"
+        android:text="@string/solveLT"
+        android:textColor="#00E5EE"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="205dip"
+        android:layout_y="111dip"
+        android:src="@drawable/light_spot" />
+
+    <TextView
+        android:id="@+id/tView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="205dip"
+        android:layout_y="99dip"
+        android:text="@string/solveBL"
+        android:textColor="#00E5EE"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="86dip"
+        android:layout_y="235dip"
+        android:src="@drawable/light_spot" />
+
+    <TextView
+        android:id="@+id/tView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="86dip"
+        android:layout_y="223dip"
+        android:text="@string/solveCS"
+        android:textColor="#00E5EE"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="107dip"
+        android:layout_y="150dip"
+        android:src="@drawable/light_spot" />
+
+    <TextView
+        android:id="@+id/tView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="105dip"
+        android:layout_y="138dip"
+        android:text="@string/solveFDJ"
+        android:textColor="#00E5EE"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="313dip"
+        android:layout_y="155dip"
+        android:src="@drawable/light_spot" />
+
+    <TextView
+        android:id="@+id/tView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="308dip"
+        android:layout_y="143dip"
+        android:text="@string/solveZWX"
+        android:textColor="#00E5EE"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="368dip"
+        android:layout_y="128dip"
+        android:src="@drawable/light_spot" />
+
+    <TextView
+        android:id="@+id/tView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="368dip"
+        android:layout_y="116dip"
+        android:text="@string/solveSY"
+        android:textColor="#00E5EE"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="430dip"
+        android:layout_y="57dip"
+        android:src="@drawable/light_spot" />
+
+    <TextView
+        android:id="@+id/tView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="430dip"
+        android:layout_y="45dip"
+        android:text="@string/solveHH"
+        android:textColor="#00E5EE"
+        android:textSize="12dp" />
+
+    <FrameLayout
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/BtnSlide"
+            android:layout_width="20dp"
+            android:layout_height="360dp"
+            android:layout_gravity="right"
+            android:src="@drawable/move_left" />
+
+        <ImageView
+            android:id="@+id/BtnSlide1"
+            android:layout_width="20dp"
+            android:layout_height="360dp"
+            android:src="@drawable/move_left" 
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/menu"
+            layout="@layout/dummy_menu" />
+    </FrameLayout>
+
+</AbsoluteLayout>

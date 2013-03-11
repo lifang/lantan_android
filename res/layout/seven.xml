@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/seven_bg"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/shuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="70dp"
+        android:text="@string/shuoming"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/blackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dip"
+            
+            android:src="@drawable/seven_t_bg"
+            
+            />
+
+        <Button
+            android:id="@+id/Acidrain"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:gravity="center_horizontal"
+            android:onClick="Acidrainonclicks"
+            android:paddingTop="90dp"
+            android:text="@string/Acidrain"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/insectcorpse"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/Acidrain"
+            android:gravity="center_horizontal"
+            android:onClick="Acidrainonclicks"
+            android:paddingTop="90dp"
+            android:text="@string/insectcorpse"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/tirerims"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/insectcorpse"
+            android:gravity="center_horizontal"
+            android:onClick="Acidrainonclicks"
+            android:paddingTop="90dp"
+            android:text="@string/tirerims"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/UV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/tirerims"
+            android:gravity="center_horizontal"
+            android:onClick="Acidrainonclicks"
+            android:paddingTop="90dp"
+            android:text="@string/UV"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/frontglass"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/UV"
+            android:gravity="center_horizontal"
+            android:onClick="Acidrainonclicks"
+            android:paddingTop="90dp"
+            android:text="@string/frontglass"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Scratches"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/frontglass"
+            android:gravity="center_horizontal"
+            android:onClick="Acidrainonclicks"
+            android:paddingTop="90dp"
+            android:text="@string/Scratches"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Engine"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:layout_toRightOf="@+id/Scratches"
+            android:gravity="center_horizontal"
+            android:onClick="Acidrainonclicks"
+            android:paddingTop="90dp"
+            android:text="@string/Engine"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/solve_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="480dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/solvetitle_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/text_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_icon"
+                    android:gravity="center_vertical"
+                    android:textColor="#666666"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:onClick="mClose"
+                    android:src="@drawable/x" />
+            </RelativeLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="480dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/solvetitle_bg"
+                android:tabStripEnabled="false" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="480dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff" >
+
+                <ListView
+                    android:id="@+id/listView1"
+                    android:layout_width="480dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:cacheColorHint="#00000000" />
+
+                <ListView
+                    android:id="@+id/listView2"
+                    android:layout_width="480dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:cacheColorHint="#00000000" />
+
+                <ListView
+                    android:id="@+id/listView3"
+                    android:layout_width="480dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:cacheColorHint="#00000000" />
+
+                <ListView
+                    android:id="@+id/listViewT"
+                    android:layout_width="460dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:cacheColorHint="#00000000" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

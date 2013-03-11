@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:background="@drawable/bg1">
+
+            <Button
+                android:id="@+id/luntaiButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="openView2"
+                android:text="@string/jiejue1" />
+
+			 <Button
+                android:id="@+id/luntaiButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/luntaiButton2"
+                android:onClick="openView1"
+                android:text="@string/wenti" />
+
+            <Button
+                android:id="@+id/luntaiButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/luntaiButton2"
+                android:onClick="openView3"
+                android:text="@string/jiejue2" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="800dp"
+                android:layout_below="@id/luntaiButton3" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
