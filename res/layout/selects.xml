@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#e0000000"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageSwitcher
+            android:id="@+id/images"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:gravity="center"
+            >
+			
+            <Button 
+                android:id="@+id/btnreturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnreturn"
+                android:background="@drawable/btn01" 
+                android:onClick="btnreturn"
+                />
+            <Button
+                android:id="@+id/dingdan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dingdan" 
+                android:background="@drawable/btn02"
+                android:onClick="btndingdan"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#e0000000"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</LinearLayout>
