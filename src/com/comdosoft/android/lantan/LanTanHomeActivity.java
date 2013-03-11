@@ -37,7 +37,6 @@ public class LanTanHomeActivity extends Activity implements AnimationListener {
 	private TextView tv1;
 	private TextView downPage;
 	private ImageView iv;
-
 	private FrameLayout mFrameLayout;
 	private View menu;
 	private boolean menuOut = false;
@@ -146,6 +145,7 @@ public class LanTanHomeActivity extends Activity implements AnimationListener {
 	}
 
 	public void tieshi(View v) {
+		downPageFlag=true;
 		tv.setVisibility(8);
 		downPage.setVisibility(8);
 		iv.setVisibility(0);
@@ -179,14 +179,15 @@ public class LanTanHomeActivity extends Activity implements AnimationListener {
 		startActivity(intent);
 	}
 
+
 	class ClickListener implements OnClickListener {
 		public void onClick(View v) {
 			LanTanHomeActivity me = LanTanHomeActivity.this;
 			Context context = me;
 			Animation anim;
 			if (flag) {
-				ivIcon1.layout(ivIcon1.getLeft() + 1060, 0, ivIcon1.getLeft()
-						+ 1060 + ivIcon1.getWidth(), ivIcon1.getHeight());
+				ivIcon1.layout(ivIcon1.getLeft() + 1060, 330, ivIcon1.getLeft()
+						+ 1060 + ivIcon1.getWidth(), ivIcon1.getHeight()+330);
 				menu.layout(menu.getLeft() + 1100, 0, menu.getLeft() + 1100
 						+ menu.getWidth(), menu.getHeight());
 				flag = false;

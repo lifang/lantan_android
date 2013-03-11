@@ -75,6 +75,7 @@ public class LanTanIntroduceWorld extends Activity implements AnimationListener{
 		startActivity(intent);
 	}
 
+
 	class ClickListener implements OnClickListener {
 		public void onClick(View v) {
 			LanTanIntroduceWorld me = LanTanIntroduceWorld.this;

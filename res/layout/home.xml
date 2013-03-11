@@ -83,6 +83,25 @@
         <include
             android:id="@+id/menu"
             layout="@layout/dummy_menu" />
+
+            <ImageView
+                android:id="@+id/BtnSlide"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="165dp"
+                android:layout_gravity="right"
+                android:src="@drawable/move_left" />
+
+            <ImageView
+                android:id="@+id/BtnSlide1"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/move_right"
+                android:visibility="invisible" />
+
+            <include
+                android:id="@+id/menu"
+                layout="@layout/dummy_menu" />
     </FrameLayout>
 
     <RelativeLayout

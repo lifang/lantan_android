@@ -153,7 +153,7 @@
             android:id="@+id/BtnSlide1"
             android:layout_width="20dp"
             android:layout_height="360dp"
-            android:src="@drawable/move_left" 
+            android:src="@drawable/move_right" 
             android:visibility="invisible" />
 
         <include

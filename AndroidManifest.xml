@@ -5,7 +5,6 @@
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="10" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
 	<uses-permission android:name="android.permission.WRITE_SETTINGS" ></uses-permission>
@@ -142,6 +141,7 @@
             android:label="@string/solveBL"
             android:launchMode="singleTask" >
         </activity>
+
     </application>
 
 </manifest>
